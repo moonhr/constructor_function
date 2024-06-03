@@ -5,8 +5,12 @@
 function workOne(a, b) {
   //* logic : 매개변수 두 개를 받고, 리턴은 객체
   let localVariable = {};
+
   localVariable[a] = a;
   localVariable[b] = b;
+
   return localVariable
 }
-console.log(workOne(1,2))
+
+let test = workOne('황재민','배성빈')
+console.log(test)
