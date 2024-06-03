@@ -29,9 +29,14 @@ const names = [
 const makeMember = require('./work-3');
 
 let arrayMembers = [];
-for(let i = 0; i < names.length; i++){
-  let member = makeMember(i, names[i]);
-  arrayMembers.push(member);
-}
+// for(let i = 0; i < names.length; i++){
+//   let member = makeMember(i, names[i]);
+//   arrayMembers.push(member);
+// }
+
+names.forEach(element => {
+  let index = {};
+  arrayMembers.push(makeMember(index ,element))
+});
 //객체가 원소인 배열이 만들어짐
 console.log(arrayMembers);
