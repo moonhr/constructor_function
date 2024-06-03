@@ -19,8 +19,9 @@ function workOne(a, b) {
   } else {
     console.error("문자열만 받음");
   }
-
 }
 
-let test = workOne('황재민', '배성빈')
+
+
+let test = workOne('a','2')
 console.log(test)
