@@ -8,5 +8,4 @@ function workThree(index, name) {
   return local;
 };
 
-let test = workThree(5, '문혜림');
-console.log(test)
+module.exports = workThree;
