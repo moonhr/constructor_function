@@ -10,8 +10,3 @@ function workOne(a, b) {
   return localVariable
 }
 console.log(workOne(1,2))
-
-let obj = {};
-const a = "테스트";
-obj[a] = a;
-console.log(obj);
