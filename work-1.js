@@ -4,13 +4,23 @@
 
 function workOne(a, b) {
   //* logic : 매개변수 두 개를 받고, 리턴은 객체
-  let localVariable = {};
+  //* condition : 매개변수 모두 문자열
+  if (typeof (a) === 'string') {
+    if (typeof (b) === 'string') {
+      let localVariable = {};
 
-  localVariable[a] = a;
-  localVariable[b] = b;
+      localVariable[a] = a;
+      localVariable[b] = b;
 
-  return localVariable
+      return localVariable
+    } else {
+      console.error("문자열만 받음");
+    }
+  } else {
+    console.error("문자열만 받음");
+  }
+
 }
 
-let test = workOne('황재민','배성빈')
+let test = workOne('황재민', '배성빈')
 console.log(test)
