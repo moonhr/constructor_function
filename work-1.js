@@ -4,5 +4,8 @@
 
 function workOne(a, b) {
   //* logic : 매개변수 두 개를 받고, 리턴은 객체
-  return Object;
+  let localVariable = {a};
+  localVariable.a = b;
+  return localVariable.a;
 }
+console.log(workOne(1,2))
