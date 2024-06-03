@@ -4,8 +4,14 @@
 
 function workOne(a, b) {
   //* logic : 매개변수 두 개를 받고, 리턴은 객체
-  let localVariable = {a};
-  localVariable.a = b;
-  return localVariable.a;
+  let localVariable = {};
+  localVariable[a] = a;
+  localVariable[b] = b;
+  return localVariable
 }
 console.log(workOne(1,2))
+
+let obj = {};
+const a = "테스트";
+obj[a] = a;
+console.log(obj);
